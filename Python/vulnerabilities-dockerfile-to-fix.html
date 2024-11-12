@@ -1,0 +1,18 @@
+
+    <html>
+    <head>
+        <title>Vulnerability Report</title>
+        <style>
+            .severity-critical { color: darkred; }
+            .severity-high { color: red; }
+            .severity-medium { color: orange; }
+            .severity-low { color: gray; }
+        </style>
+    </head>
+    <body>
+    
+<h1>Image Scan Vulnerabilities</h1>
+<h1>Config Scan Vulnerabilities</h1>
+<h2>Result Type: dockerfile</h2>
+<h3>Title: Image user should not be 'root'</h3><p><strong>Type:</strong> Dockerfile Security Check</p><p><strong>Severity:</strong> <span class='severity-high'>HIGH</span></p><p><strong>Description:</strong> Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.</p><p><strong>Resolution:</strong> Add 'USER <non root user name>' line to the Dockerfile</p><p><strong>References:</strong> https://docs.docker.com/develop/develop-images/dockerfile_best-practices/, https://avd.aquasec.com/misconfig/ds002</p><br>
+</body></html>
